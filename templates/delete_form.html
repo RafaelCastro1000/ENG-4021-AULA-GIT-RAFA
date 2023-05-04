@@ -1,0 +1,6 @@
+<form method="POST">
+  {% csrf_token %}
+  Voce tem certeza que deseja deletar a tarefa com id= {{task.id}}
+  <input type="submit" name="confirm" value="Sim">
+  <input type="submit" value="Não">
+</form>
